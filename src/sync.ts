@@ -25,10 +25,10 @@ async function write(pack?: ICustomer[]) {
           lastName: hash(customer.lastName),
           email: hashEmail(customer.email),
           address: {
+            ...customer.address,
             line1: hash(customer.address.line1),
             line2: hash(customer.address.line2),
             postcode: hash(customer.address.postcode),
-            ...customer.address,
           },
         }),
         upsert: true,
