@@ -22,7 +22,7 @@ Install dependencies
 
 Run mongo ReplicaSet (2 replsets is enough)
 
-Create .env file in root directory and set DB_URI=<mongo conn uri>
+Create .env file in root directory and set DB_URI=<mongo_conn_uri>
 
 Start the generator
 
